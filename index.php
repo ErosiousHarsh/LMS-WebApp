@@ -5,7 +5,7 @@
     </head>
 
     <title>
-        LMS-Wwb    
+        LMS-Web    
     </title>
 
     <body>
