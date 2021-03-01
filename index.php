@@ -9,8 +9,11 @@
     </title>
 
     <body>
-        <?php include "header.php"; ?>
-
+        <section id="fullSection">
+            <div id="divLogin">
+                <p>Test</p>
+            </div>
+        </section>
         <?php require "js/js.php"; ?>
     </body>
 </html>

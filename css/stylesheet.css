@@ -1,3 +1,19 @@
-.a {
-    color: red;
+#fullSection {
+    background-image: url('../images/back.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border: .4em;
+    border-style: solid;
+    border-color: blue;
+}
+#divLogin {
+    border: .2em;
+    width: 20%;
+    border-style: solid;
+    border-color: red;
+    margin: auto;
+    text-align: center;
 }
