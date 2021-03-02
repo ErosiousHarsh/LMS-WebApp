@@ -2,12 +2,11 @@
     background-image: url('../images/back.png');
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: center;
     position: absolute;
+    background-color: #ADD8E6;
     height: 100%;
     width: 100%;
-    border: .4em;
-    border-style: solid;
-    border-color: blue;
 }
 #divLogin {
     border: .2em;
@@ -15,5 +14,7 @@
     border-style: solid;
     border-color: red;
     margin: auto;
+    position: relative;
+    top: 50%;
     text-align: center;
 }
