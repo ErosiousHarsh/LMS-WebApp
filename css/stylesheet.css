@@ -1,23 +1,21 @@
+
 @font-face {
     font-family: 'heading';
     src: url('../fonts/Neufreit.otf');
 }
 #fullSection {
-    /* background-image: url('../images/back.png'); */
     position: absolute;
-    /* background-color: #ADD8E6; */
+    /* background-color: rgba(37, 0, 221, .6); */
     height: 100%;
     width: 100%;
-    background-size: 200px;
-    border-top-right-radius: 70% 40em;
-    border-top-left-radius: 100% 30em;
-    border-bottom-left-radius: 70% 30em;
-    border-bottom-right-radius: 50% 20em;
+    border-top-right-radius: 100% 100%;
+    border-top-left-radius: 100% 100%;
+    border-bottom-left-radius: 100% 100%;
+    border-bottom-right-radius: 100% 100%;
 }
 #imgTop {
     position: absolute;
     background-image: url('../images/topCropped.png');
-    
     border-bottom-left-radius: 45% 100%;
 }
 #imgBottom {
@@ -29,7 +27,7 @@
 }
 #imgTop, #imgBottom {
     filter: blur(1px);
-    box-shadow: 0 3000px rgba(27, 0, 161, 0.6) inset;
+    box-shadow: 0 3000px rgba(37, 0, 221, 0.6) inset;
     background-size: contain;
     width: 100%;
 }
@@ -38,12 +36,15 @@
         height: 8%;
     }
     #topText {
-        font-size: 8vw!important;
-        /* margin-right: .4em; */
-        left: 12%!important;
+        font-size: 6vw!important;
+        left: 30%!important;
     }
     #imgBottom {
         height: 7%;
+    }
+    #divLogin {
+        top: 18%;
+        width: 90%;
     }
 }
 @media(min-width: 767px) {
@@ -56,6 +57,10 @@
     }
     #imgBottom {
         height: 8%;
+    }
+    #divLogin {
+        top: 25%;
+        width: 35%;
     }
 }
 #topText {
@@ -73,12 +78,16 @@
     word-wrap: break-word;
 }
 #divLogin {
-    border: .2em;
-    width: 20%;
-    border-style: solid;
-    border-color: red;
+    padding: 2%;
+    border: .2rem;
+    /* border-style: solid;
+    border-color: blue; */
     margin: auto;
     position: relative;
-    top: 50%;
     text-align: center;
+}
+.email {
+    position: absolute;
+    top: 33%;
+    right: 91%;
 }
