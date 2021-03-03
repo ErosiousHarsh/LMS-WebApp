@@ -17,22 +17,21 @@
 #imgTop {
     position: absolute;
     background-image: url('../images/topCropped.png');
-    filter: blur(1px);
-    box-shadow: 0 3000px rgba(27, 0, 161, 0.6) inset;
-    background-size: contain;
-    width: 100%;
+    
     border-bottom-left-radius: 45% 100%;
 }
 #imgBottom {
     position: absolute;
     height: 10%;
     background-image: url('../images/bottomCropped.png');
+    bottom: 0;
+    border-top-right-radius: 45% 100%;
+}
+#imgTop, #imgBottom {
     filter: blur(1px);
     box-shadow: 0 3000px rgba(27, 0, 161, 0.6) inset;
     background-size: contain;
     width: 100%;
-    bottom: 0;
-    border-top-right-radius: 45% 100%;
 }
 @media(max-width: 768px) {
     #imgTop {
