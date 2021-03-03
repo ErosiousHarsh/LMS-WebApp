@@ -1,12 +1,77 @@
+@font-face {
+    font-family: 'heading';
+    src: url('../fonts/Neufreit.otf');
+}
 #fullSection {
-    background-image: url('../images/back.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+    /* background-image: url('../images/back.png'); */
     position: absolute;
-    background-color: #ADD8E6;
+    /* background-color: #ADD8E6; */
     height: 100%;
     width: 100%;
+    background-size: 200px;
+    border-top-right-radius: 70% 40em;
+    border-top-left-radius: 100% 30em;
+    border-bottom-left-radius: 70% 30em;
+    border-bottom-right-radius: 50% 20em;
+}
+#imgTop {
+    position: absolute;
+    background-image: url('../images/topCropped.png');
+    filter: blur(1px);
+    box-shadow: 0 3000px rgba(27, 0, 161, 0.6) inset;
+    background-size: contain;
+    width: 100%;
+    border-bottom-left-radius: 45% 100%;
+}
+#imgBottom {
+    position: absolute;
+    height: 10%;
+    background-image: url('../images/bottomCropped.png');
+    filter: blur(1px);
+    box-shadow: 0 3000px rgba(27, 0, 161, 0.6) inset;
+    background-size: contain;
+    width: 100%;
+    bottom: 0;
+    border-top-right-radius: 45% 100%;
+}
+@media(max-width: 768px) {
+    #imgTop {
+        height: 8%;
+    }
+    #topText {
+        font-size: 8vw!important;
+        /* margin-right: .4em; */
+        left: 12%!important;
+    }
+    #imgBottom {
+        height: 7%;
+    }
+}
+@media(min-width: 767px) {
+    #imgTop {
+        height: 10%;
+    }
+    #topText {
+        font-size: 3vw!important;
+        /* margin-right: 1em; */
+    }
+    #imgBottom {
+        height: 8%;
+    }
+}
+#topText {
+    position: absolute;
+    z-index: 1;
+    left: 64%;
+    /* -webkit-text-stroke-color: black!important;
+    -webkit-text-stroke-width: 2px!important; */
+    padding: 0;
+    text-transform: capitalize;
+    font-family: heading;
+    color: #FFFFFF;
+    font-family: src;
+    font-weight: 1000;
+    word-wrap: break-word;
 }
 #divLogin {
     border: .2em;
