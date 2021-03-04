@@ -16,7 +16,7 @@
 .backImg {
     position: absolute;
     height: 90%;
-    width: 50%;
+    width: 55%;
     top: 4%;
     /* A9DEE6 224AC2 */
     background-position: left;
@@ -37,4 +37,19 @@
     font-weight: bolder;
     font-family: heading;
     font-size: 4rem;
+}
+.bold {
+    font-weight: bolder!important;   
+}
+.validate {
+    border-bottom-color: white!important;
+}
+.validate:hover, .validate:focus {
+    border-bottom-color: blue!important;
+}
+.icon-white {
+    color: white!important;
+}
+.icon-active {
+    color: blue!important;
 }

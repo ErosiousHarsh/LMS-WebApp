@@ -15,17 +15,17 @@
                 <div class="loginForm">
                     <p class="lead intro">Welcome To LMS</p>
                     <p class="lead text-white fw-bold fs-3">Login to continue</p>
-                    <!-- <form class="card card-block bg-faded">
-                        <div class="form-group input-group">
-                            <span class="input-group-addon">@</span>
-                            <label class="has-float-label">
-                                <input class="form-control" type="email" placeholder="email@example.com"/>
-                                <span>Email</span>
-                            </label>
+                    <form class="col s12 mt-5">
+                        <div class="input-field col s6 bg-grey">
+                            <i class="material-icons-outlined prefix icon-white">email</i>
+                            <input id="icon_prefix" type="email" class="validate bold">
+                            <label for="icon_prefix" class="bold icon-white">Email</label>
                         </div>
-                    </form> -->
-                    <form>
-                        <input type="email" placeholder="emailHere">
+                        <div class="input-field col s6 bg-grey">
+                            <i class="material-icons-outlined prefix icon-white">lock</i>
+                            <input id="icon_password" type="password" class="validate bold">
+                            <label for="icon_password" class="bold icon-white">Password</label>
+                        </div>
                     </form>
                 </div>
             </div>
