@@ -4,12 +4,13 @@
     src: url('../fonts/Neufreit.otf');
 }
 .whole {
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100%;
     background-image: linear-gradient(45deg,#A9DEE6,#3f60c4);
 }
 .front {
+    position: relative;
     height: 100%;
     width: 100%;
 }
@@ -22,15 +23,42 @@
     background-position: left;
     background-size: contain;
     background-repeat: no-repeat;
+    animation: breathing 15s ease-out infinite normal;
 }
+  
+  @keyframes breathing {
+    0% {
+      -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+      transform: scale(0.9);
+    }
+  
+    25% {
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+    }
+  
+    60% {
+      -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+      transform: scale(0.9);
+    }
+  
+    100% {
+      -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+      transform: scale(0.9);
+    }
+  }
 .loginForm {
     position: relative;
-    padding: 2px;
+    padding: 2.5rem;
     width: 40%;
     height: 80%;
     margin-left: auto;
     margin-right: 4%;
-    top: 9%;
+    top: 6%;
 }
 .intro {
     color: white;
@@ -38,18 +66,68 @@
     font-family: heading;
     font-size: 4rem;
 }
+@media(max-width: 720px) {
+    .intro {
+        font-size: 2rem;
+    }
+    .backImg {
+        height: 30%;
+        width: 40%;
+        top: 0%;
+        background-position: center
+    }
+    .loginForm {
+        position: relative;
+        padding: 2px;
+        width: 80%;
+        height: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        top: 30%;
+    }
+}
 .bold {
     font-weight: bolder!important;   
-}
-.validate {
-    border-bottom-color: white!important;
 }
 .validate:hover, .validate:focus {
     border-bottom-color: blue!important;
 }
-.icon-white {
-    color: white!important;
+.input-field label {
+    color: white;
 }
-.icon-active {
-    color: blue!important;
+input[type=email]:not(.browser-default):focus:not([readonly])+label, input[type=password]:not(.browser-default):focus:not([readonly])+label {
+    color: #34568B;
+}
+input[type=password]:not(.browser-default), input[type=email]:not(.browser-default) {
+    border: none;
+    border-bottom: 1px solid white;
+    box-shadow: 1 1px 0 0 white;
+}
+.input-field .prefix {
+    color: white;
+}
+.input-field .prefix.active {
+    color: #34568B;
+}
+.input-field .label.active, .input-field .label {
+    color: #34568B;
+}
+.loginBtn {
+    background: #34568B;
+}
+.loginBtn:hover {
+    background: #3f60c4
+}
+[type="checkbox"].filled-in:checked+span:not(.lever):after {
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #34568B;
+    background-color: #34568B;
+    z-index: 0;
+}
+.loginBtn:focus {
+    background: #34568B;
+    box-shadow: 1 1px 0 0 #A9DEE6;
+    border-color: white;
 }
