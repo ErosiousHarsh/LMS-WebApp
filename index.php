@@ -1,8 +1,6 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <?php require "css/bootstrap.php"; ?>
-    </head>
+    <head <?php require "css/bootstrap.php"; ?> </head>
 
     <title>
         LMS-Web    
